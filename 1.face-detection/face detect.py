@@ -6,7 +6,7 @@ import cv2
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascade_eye_tree_eyeglasses.xml')
 
-img = cv2.imread('pic2.jpg')#load image
+img = cv2.imread('harsh2.png')#load image
 cv2.namedWindow('img',cv2.WINDOW_NORMAL)#resize 
 cv2.resizeWindow('img', 600,600)        #image
    
@@ -23,6 +23,7 @@ for (x,y,w,h) in faces:
     font=cv2.FONT_HERSHEY_SIMPLEX
     cv2.putText(img,'FACE {}'.format(c),(x,int(y+h/8)),font,w/170,(255,255,255),int(w/50))
     eyes = eye_cascade.detectMultiScale(roi_gray)#detect eye coordinates ex,ey,ew,eh
+    print(eyes)
     for (qx,qy,ew,eh) in eyes:
         cv2.rectangle(roi_color,(qx,qy),(qx+ew,qy+eh),(0,255,0),6)
     c+=1
@@ -31,7 +32,7 @@ for (x,y,w,h) in faces:
 c-=1
 print('number of faces detected= {}'.format(c))
 #add text message
-font=cv2.FONT_HERSHEY_SIMPLEX
+font=cv2.FONT_HERSHEY_SIMPLEX #not needed since mentioned earlier
 cv2.putText(img,'Face Detection',(40,110),font,4,(200,200,200),10)
 
 #cv2.imshow('img1',roi_color)

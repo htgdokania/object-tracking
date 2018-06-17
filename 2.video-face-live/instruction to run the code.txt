@@ -1,0 +1,11 @@
+What I Have Done:
+in this part of the code , we draw a blue square across the face at real time and also count number of faces in the frame and print it
+
+
+Errors Encountered:
+TypeError: 'tuple' object is not callable
+
+instruction to use:
+press 'q' to stop the program ,else you have to force close
+
+
