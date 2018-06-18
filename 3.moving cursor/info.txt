@@ -1,1 +1,10 @@
-pyautogui is used to move the cursor over multiplatforms
+pyautogui is used to move the cursor over screen :
+
+INSTRUCTIONS :
+
+😀 move face RIGHT to move cursor RIGHT
+😀 move face LEFT to move cursor LEFT
+😀 move face UP to move cursor UP
+😀 move face DOWN to move cursor DOWN
+😀 move face TOWARDS THE CAMERA to LEFT_CLICK
+😀 move face AWAY FROM SCREEN to RIGHT_CLICK
