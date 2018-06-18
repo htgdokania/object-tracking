@@ -30,7 +30,7 @@ while True:
         eyes=eye_cascade.detectMultiScale(roi_gray)
         for(ex,ey,ew,eh) in eyes:
             cv2.rectangle(roi_color,(ex,ey)(ex+ew,ey+eh),(0,255,0),6)
-        """
+        #"""
     cv2.imshow('frame',frame) #display image
     print('number of faces={}'.format(c))
     if cv2.waitKey(25) & 0xFF==ord('q'):
