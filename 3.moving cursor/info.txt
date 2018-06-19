@@ -8,3 +8,13 @@ INSTRUCTIONS :
 😀 move face DOWN to move cursor DOWN
 😀 move face TOWARDS THE CAMERA to LEFT_CLICK
 😀 move face AWAY FROM SCREEN to RIGHT_CLICK
+
+
+v1.0:
+just movement with no visual effects
+
+v2.0:
+visual effects added for up down left right and some minor bug fix
+
+v3.0:
+
